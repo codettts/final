@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Btec Cms</title>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
+    <link rel="stylesheet" href="../../assets/css/search-nav.css" />
+    <link rel="stylesheet" href="../../assets/css/calendar.css" />
+    <link rel="stylesheet" href="../../assets/css/content-overview.css" />
+    <link rel="stylesheet" href="../../assets/css/sidebar-nav-class.css" />
+    <link rel="stylesheet" href="../../assets/css/view-sub-asm.css" />
+    <link rel="stylesheet" href="../../assets/css/slideshow.css" />
+    <link rel="stylesheet" href="../../assets/css/table.css" />
+    <link rel="stylesheet" href="../../assets/css/update-profile.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Nunito"
+    />
+  </head>
+  <body>
+    <div id="containers">
+      <div id="top">
+        <div class="header-logo">
+          <a href="trainer-index.html"
+            ><img class="img-logo" src="../../assets/images/logo.png" alt=""
+          /></a>
+        </div>
+        <div class="header-user">
+          <div class="notifi">
+            <i class="far fa-bell header-icon"></i><span class="badge">3</span>
+          </div>
+          <div class="drop-user">
+            <button onclick="dropdownFunc()" class="btn-drop-user">
+              <img
+                class="img-user btn-user-element"
+                src="../../assets/images/user-img.jpg"
+                alt=""
+              />
+              <span class="btn-user-element">Username</span>
+              <i class="fas fa-chevron-down btn-user-element"></i>
+            </button>
+            <div id="drop" class="header-sub-nav">
+              <a href="update-profile.html"
+                ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+              >
+              <a href=""
+                ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+              >
+            </div>
+            <button onclick="openNav()" class="btn-side-nav">
+              <span class="btn-user-element">Username</span>
+            </button>
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <img
+                class="img-user-sidenav"
+                src="../../assets/images/user.jpg"
+                alt=""
+              />
+              <a href="update-profile.html"
+                ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+              >
+              <a href=""
+                ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Navigation -->
+      <div id="navigation" class="topnav">
+        <ul id="nav">
+          <li>
+            <a href="trainer-index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="dropres" onclick="dropRes()">
+            <a href="#">
+              <i class="fas fa-house-user"></i>
+            Admin
+              <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="subnav">
+              <li>
+                <a href="manage-account.html"
+                  ><i class="fas fa-graduation-cap"></i> Manage account</a
+                >
+              </li>
+              <li>
+                <a href="manage-class.html"
+                  ><i class="fas fa-user-graduate"></i> Manage Class</a
+                >
+              </li>
+              <li>
+                <a href="manage-major.html"
+                  ><i class="fas fa-user-graduate"></i> Manage major</a
+                >
+              </li>
+              <li>
+                <a href="manage-subject.html"
+                  ><i class="fas fa-user-graduate"></i> Manage subject</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-calendar-day"></i> Event</a>
+          </li>
+        </ul>
+        <a href="javascript:void(0);" class="nav-icon" onclick="dropNavRes()"
+          >&#9776;</a
+        >
+        <div class="search-nav">
+          <form class="navbar-form" action="">
+            <input
+              type="search"
+              placeholder="Search..."
+              name="search"
+              id="search"
+            />
+            <button type="submit" class="icon">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- End Navigation -->
+      <div id="content">
+        <!-- <div id="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="">Home</a></li>
+            <li>Update Profile</li>
+          </ul>
+        </div> -->
+        <div class="clear"></div>
+        <div id="main-content">
+          <div class="right-content">
+            <div class="nav-tab">
+              <button
+                class="btn tablink first-tab"
+                onclick="openTab(event,'Class-Overview')"
+              >
+             Create account
+              </button > 
+              <button 
+              
+              class="btn tablink "
+              onclick="openTab(event,'Class-Overview')"> <li><a href="manage-account.html">Manage account</a></li>
+        
+            </button>
+            </div>
+            <div id="update-profile">
+              <form action="update-profile.html" method="post">
+                <table class="table-user-info">
+                  <tr>
+                    <th>Full Name</th>
+                    <td>
+                      <input
+                        class="input-user-info"
+                        type="text"
+                        name="full_name"
+                        value="name"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>DOB</th>
+                    <td>
+                        <input
+                        class="input-user-info"
+                        type="date"/>
+                        <!-- <textarea class="input-user-info" name="user-desc" style="resize: none;" id="" cols="30" rows="5"></textarea> -->
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>PhoneNumber</th>
+                    <td>
+                        <input
+                        class="input-user-info"
+                        type="text"/>
+                        <!-- <textarea class="input-user-info" name="user-desc" style="resize: none;" id="" cols="30" rows="5"></textarea> -->
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Email Address</th>
+                    <td>
+                      <input
+                        class="input-user-info"
+                        type="text"
+                        name="email_address"
+                        value="....@gmail.com"
+                      />
+                    </td>
+                    <tr>
+                        <th>Class</th>
+                        <td>
+                            <input
+                            class="input-user-info"
+                            type="text"/>
+                            <!-- <textarea class="input-user-info" name="user-desc" style="resize: none;" id="" cols="30" rows="5"></textarea> -->
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Subject</th>
+                        <td>
+                            <input
+                            class="input-user-info"
+                            type="text"/>
+                            <!-- <textarea class="input-user-info" name="user-desc" style="resize: none;" id="" cols="30" rows="5"></textarea> -->
+                          </div>
+                        </td>
+                      </tr>
+                  </tr>
+                  <tr>
+                    <th>Current place of residence</th>
+                    <td>
+                      <input
+                        class="input-user-info"
+                        type="text"
+                        name="city"
+                        value="So nha, phuong,thanh pho..."
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Major</th>
+                    <td>
+                      <select class="input-user-info" name="Major" id="">
+                        <option value="IT">IT</option>
+                        <option value="Design">Design</option>
+                        <option value="business Administration">business Administration</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Registration Date</th>
+                    <td>
+                        <input
+                        class="input-user-info"
+                        type="date"/>
+                        <!-- <textarea class="input-user-info" name="user-desc" style="resize: none;" id="" cols="30" rows="5"></textarea> -->
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Avatar</th>
+                    <td>
+                      <input class="input-user-info" type="file" mutiple />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Passowrd</th>
+                    <td>
+                        <input
+                        class="input-user-info"
+                        type="text"/>
+                        <!-- <textarea class="input-user-info" name="user-desc" style="resize: none;" id="" cols="30" rows="5"></textarea> -->
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>
+                      <button class="btn btn-update-profile">
+                    Create account
+                      </button>
+                      <button class="btn btn-cancel-update-profile">
+                        Cancel
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+          </div>
+          <div id="sidebar">
+            <div id="calendar">
+              <div class="calendar-title">
+                <i class="fas fa-calendar-alt"></i><span>Calendar</span>
+              </div>
+              <div class="wrapper">
+                <div id="calendari"></div>
+              </div>
+            </div>
+            <div class="events">
+              <div class="events-title">
+                <i class="fas fa-calendar-check"></i
+                ><span>Upcoming Events</span>
+              </div>
+              <div>
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <span class="glyphicon glyphicon-calendar"></span> 
+                      Calendar Events
+                    </h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul class="media-list">
+                      <li class="media">
+                        <div class="media-left">
+                          <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                              <span class="panel-title strong"> Mar </span>
+                            </div>
+                            <div class="panel-body day text-danger">23</div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Assignment 1</h4>
+                          <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-left">
+                          <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                              <span class="panel-title strong"> Jan </span>
+                            </div>
+                            <div class="panel-body text-danger day">16</div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Assignment 1</h4>
+                          <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
+                        </div>
+                      </li>
+                      <li class="media">
+                        <div class="media-left">
+                          <div class="panel panel-danger text-center date">
+                            <div class="panel-heading month">
+                              <span class="panel-title strong all-caps">
+                                Dec
+                              </span>
+                            </div>
+                            <div class="panel-body text-danger day">8</div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">Assignment 1</h4>
+                          <p>Due : Saturday, 23 January 2021, 11:59 PM</p>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-default btn-block"
+                      >More Events »</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-wrap">
+          <div class="footer footer-info">
+            <h1><i class="fas fa-school"></i> ABC University</h1>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            </p>
+            <p>
+              <a href="mailto:thanhbhaf18@gmail.com"
+                ><i class="fas fa-envelope-open-text"></i> Email :
+                thanhbhaf18@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:0366917178"
+                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+              >
+            </p>
+          </div>
+          <div class="footer footer-about">
+            <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
+            <div class="right">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+            <div class="left">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-link">
+          <a href="https://www.facebook.com/fptbtec/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <script src="../../assets/js/drop-user.js"></script>
+    <script src="../../assets/js/fixed-nav-top.js"></script>
+    <script src="../../assets/js/login.js"></script>
+    <script src="../../assets/js/showpass.js"></script>
+    <script src="../../assets/js/sidebar-nav-class.js"></script>
+    <script src="../../assets/js/slideshow.js"></script>
+    <script src="../../assets/js/table.js"></script>
+    <script src="../../assets/js/tablink.js"></script>
+    <script src="../../assets/js/textarea-editor.js"></script>
+    <script src="../../assets/js/responsive.js"></script>
+  </body>
+</html>
+
+
+
+
+

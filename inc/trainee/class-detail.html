@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Btec Cms</title>
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
+  <link rel="stylesheet" href="../../assets/css/search-nav.css" />
+  <link rel="stylesheet" href="../../assets/css/calendar.css" />
+  <link rel="stylesheet" href="../../assets/css/content-overview.css" />
+  <link rel="stylesheet" href="../../assets/css/sidebar-nav-class.css" />
+  <link rel="stylesheet" href="../../assets/css/view-sub-asm.css" />
+  <link rel="stylesheet" href="../../assets/css/slideshow.css" />
+  <link rel="stylesheet" href="../../assets/css/table.css" />
+  <link rel="stylesheet" href="../../assets/css/update-profile.css" />
+  <link rel="stylesheet" href="../../assets/css/edit-content.css" />
+  <link rel="stylesheet" href="../../assets/css/responsive.css" />
+  <link
+    rel="stylesheet"
+    href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//fonts.googleapis.com/css?family=Nunito"
+  />
+</head>
+<body>
+  <div id="container">
+    <div id="top">
+      <div class="header-logo">
+        <a href="trainer-index.html"
+          ><img class="img-logo" src="../../assets/images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="header-user">
+        <div class="notifi">
+          <i class="far fa-bell header-icon"></i><span class="badge">3</span>
+        </div>
+        <div class="drop-user">
+          <button onclick="dropdownFunc()" class="btn-drop-user">
+            <img
+              class="img-user btn-user-element"
+              src="../../assets/images/user.jpg"
+              alt=""
+            />
+            <span class="btn-user-element">Username</span>
+            <i class="fas fa-chevron-down btn-user-element"></i>
+          </button>
+          <div id="drop" class="header-sub-nav">
+            <a href="update-profile.html"
+              ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+            >
+            <a href=""
+              ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+            >
+          </div>
+          <button onclick="openNav()" class="btn-side-nav">
+            <span class="btn-user-element">Username</span>
+          </button>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <img
+              class="img-user-sidenav"
+              src="../../assets/images/user.jpg"
+              alt=""
+            />
+            <a href="update-profile.html"
+              ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+            >
+            <a href=""
+              ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Navigation -->
+    <div id="navigation" class="topnav">
+      <ul id="nav">
+        <li>
+          <a href="home.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="class-detail.html"><i class="fas fa-graduation-cap"></i>My Classes</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0);" class="nav-icon" onclick="dropNavRes()"
+        >&#9776;</a
+      >
+      <div class="search-nav">
+        <form class="navbar-form" action="">
+          <input
+            type="search"
+            placeholder="Search..."
+            name="search"
+            id="search"
+          />
+          <button type="submit" class="icon">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+      <!-- End Navigation -->
+      <div id="content">
+        <div id="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="class-detail.html">My Classes</a></li>
+            <li>Class 1</li>
+          </ul>
+        </div>
+        <div id="main-content">
+          <div class="right-content">
+            <div class="nav-tab">
+              <button
+                class="btn tablink first-tab"
+                onclick="openTab(event,'Class-Overview')"
+              >
+                Class Overview
+              </button>
+            </div>
+            <div id="Class-Overview" class="tab-content class-overview">
+              <div style="background-color: rgb(14, 235, 198)" class="topic">
+                <h1 style="color: black;" class="topic-title">Topic 1 - Done</h1>
+                <div class="topic-content">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fas fa-passport"></i> Document</a>
+                    </li>
+                    <li>
+                      <a href="asm-submit.html"
+                        ><i class="fas fa-file-alt"></i> Asm 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="asm-submit.html"
+                        ><i class="fas fa-file-alt"></i> Asm 1 2nd</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div style="background-color: rgb(240, 111, 111);" class="topic">
+                <h1 style="color: black;" class="topic-title">Topic 2 - Failed</h1>
+                <div class="topic-content">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fas fa-passport"></i> Document</a>
+                    </li>
+                    <li>
+                      <a href="asm-submit.html"
+                        ><i class="fas fa-file-alt"></i> Asm 1 - Failed</a
+                      >
+                    </li>
+                    <li>
+                      <a href="asm-submit.html"
+                        ><i class="fas fa-file-alt"></i> Asm 1 2nd</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div style="background-color: rgb(193, 83, 236);" class="topic">
+                <h1 style="color: rgb(255, 255, 255);" class="topic-title">Topic 3 - On Process</h1>
+                <div class="topic-content">
+                  <ul>
+                    <li>
+                      <a href=""><i class="fas fa-passport"></i> Document</a>
+                    </li>
+                    <li>
+                      <a href="asm-submit.html"
+                        ><i class="fas fa-file-alt"></i> Asm 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="asm-submit.html"
+                        ><i class="fas fa-file-alt"></i> Asm 1 2nd</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sidebar">
+            <div id="calendar">
+              <div class="calendar-title">
+                <i class="fas fa-calendar-alt"></i><span>Calendar</span>
+              </div>
+              <div class="wrapper">
+                <div id="calendari"></div>
+              </div>
+            </div>
+            <div class="events">
+              <div class="events-title">
+                <i class="fas fa-calendar-check"></i
+                ><span>Upcoming Events</span>
+              </div>
+              <div>
+                <div class="cal" ng-app="calApp" ng-controller="calCtrl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-wrap">
+          <div class="footer footer-info">
+            <h1><i class="fas fa-school"></i> ABC University</h1>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            </p>
+            <p>
+              <a href="mailto:thanhbhaf18@gmail.com"
+                ><i class="fas fa-envelope-open-text"></i> Email :
+                thanhbhaf18@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:0366917178"
+                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+              >
+            </p>
+          </div>
+          <div class="footer footer-about">
+            <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
+            <div class="right">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+            <div class="left">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-link">
+          <a href="https://www.facebook.com/fptbtec/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <script src="../../assets/js/drop-user.js"></script>
+    <script src="../../assets/js/fixed-nav-top.js"></script>
+    <script src="../../assets/js/login.js"></script>
+    <script src="../../assets/js/showpass.js"></script>
+    <script src="../../assets/js/sidebar-nav-class.js"></script>
+    <script src="../../assets/js/slideshow.js"></script>
+    <script src="../../assets/js/table.js"></script>
+    <script src="../../assets/js/tablink.js"></script>
+    <script src="../../assets/js/textarea-editor.js"></script>
+  </body>
+</html>

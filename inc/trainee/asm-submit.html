@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Btec Cms</title>
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/upcoming-events.css" />
+  <link rel="stylesheet" href="../../assets/css/search-nav.css" />
+  <link rel="stylesheet" href="../../assets/css/calendar.css" />
+  <link rel="stylesheet" href="../../assets/css/content-overview.css" />
+  <link rel="stylesheet" href="../../assets/css/sidebar-nav-class.css" />
+  <link rel="stylesheet" href="../../assets/css/view-sub-asm.css" />
+  <link rel="stylesheet" href="../../assets/css/slideshow.css" />
+  <link rel="stylesheet" href="../../assets/css/table.css" />
+  <link rel="stylesheet" href="../../assets/css/update-profile.css" />
+  <link rel="stylesheet" href="../../assets/css/edit-content.css" />
+  <link rel="stylesheet" href="../../assets/css/responsive.css" />
+  <link
+    rel="stylesheet"
+    href="../../assets/fonts/fontawesome-free-5.15.4-web/css/all.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//fonts.googleapis.com/css?family=Nunito"
+  />
+</head>
+<body>
+  <div id="container">
+    <div id="top">
+      <div class="header-logo">
+        <a href="trainer-index.html"
+          ><img class="img-logo" src="../../assets/images/logo.png" alt=""
+        /></a>
+      </div>
+      <div class="header-user">
+        <div class="notifi">
+          <i class="far fa-bell header-icon"></i><span class="badge">3</span>
+        </div>
+        <div class="drop-user">
+          <button onclick="dropdownFunc()" class="btn-drop-user">
+            <img
+              class="img-user btn-user-element"
+              src="../../assets/images/user.jpg"
+              alt=""
+            />
+            <span class="btn-user-element">Username</span>
+            <i class="fas fa-chevron-down btn-user-element"></i>
+          </button>
+          <div id="drop" class="header-sub-nav">
+            <a href="update-profile.html"
+              ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+            >
+            <a href=""
+              ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+            >
+          </div>
+          <button onclick="openNav()" class="btn-side-nav">
+            <span class="btn-user-element">Username</span>
+          </button>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <img
+              class="img-user-sidenav"
+              src="../../assets/images/user.jpg"
+              alt=""
+            />
+            <a href="update-profile.html"
+              ><i class="fas fa-user-cog"></i> <span>Settings</span></a
+            >
+            <a href=""
+              ><i class="fas fa-sign-out-alt"></i> <span>Log out</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Navigation -->
+    <div id="navigation" class="topnav">
+      <ul id="nav">
+        <li>
+          <a href="home.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="class-detail.html"><i class="fas fa-graduation-cap"></i>My Classes</a>
+        </li>
+      </ul>
+      <a href="javascript:void(0);" class="nav-icon" onclick="dropNavRes()"
+        >&#9776;</a
+      >
+      <div class="search-nav">
+        <form class="navbar-form" action="">
+          <input
+            type="search"
+            placeholder="Search..."
+            name="search"
+            id="search"
+          />
+          <button type="submit" class="icon">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+      <!-- End Navigation -->
+      <div id="content">
+        <div id="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="class-detail.html">My Classes</a></li>
+            <li><a href="asm-submit.html">Class 1</a></li>
+            <li>ASM 1</li>
+          </ul>
+        </div>
+        <div id="main-content">
+          <div class="right-content">
+            <div class="nav-tab">
+              <button class="btn tablink first-tab">ASM Submit</button>
+            </div>
+            <table
+              style="width: 100%; position: relative; height: 34%"
+              class="table"
+            >
+              <tbody>
+                <tr>
+                  <td>Submission Status</td>
+                  <td>Submitted for gradung</td>
+                </tr>
+                <tr                     style="
+                background-color: rgb(135, 179, 71);
+                color: aliceblue;
+              ">
+                  <td>
+                    Grading status
+                  </td>
+                  <td>
+                    Graded
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>99</td>
+                </tr>
+                <tr>
+                  <td>Due date</td>
+                  <td>Saturday 23 January 2021 11:59 PM</td>
+                </tr>
+                <tr>
+                  <td>Last modified</td>
+                  <td>Saturday 23 January 2021 11:46 PM</td>
+                </tr>
+                <tr>
+                  <td>File submissions</td>
+                  <td>hello.docx</td>
+                </tr>
+                <tr>
+                  <td>Teacher Comment</td>
+                  <td>
+                    <textarea readonly name="" id="" cols="50" rows="5">Amazing Good choop em !!!</textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Feedback</td>
+                  <td>
+                    <textarea name="" id="" cols="50" rows="5">Thank You Sir <3</textarea>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="text-align: center">
+              <button
+                onclick="document.getElementById('drop_zone').style.display='block'"
+                style="
+                  margin: 30px;
+                  font: 1em sans-serif;
+                  border: none;
+                  border-radius: 15px;
+                  width: 40%;
+                  height: 40px;
+                  background-color: rgb(9, 179, 179);
+                  color: rgb(248, 248, 248);
+                "
+              >
+                Edit Submission
+              </button>
+            </div>
+            <script>
+              function dropHandler(ev) {
+                console.log("File(s) dropped");
+
+                // Prevent default behavior (Prevent file from being opened)
+                ev.preventDefault();
+
+                if (ev.dataTransfer.items) {
+                  // Use DataTransferItemList interface to access the file(s)
+                  for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+                    // If dropped items aren't files, reject them
+                    if (ev.dataTransfer.items[i].kind === "file") {
+                      var file = ev.dataTransfer.items[i].getAsFile();
+                      console.log("... file[" + i + "].name = " + file.name);
+                    }
+                  }
+                } else {
+                  // Use DataTransfer interface to access the file(s)
+                  for (var i = 0; i < ev.dataTransfer.files.length; i++) {
+                    console.log(
+                      "... file[" +
+                        i +
+                        "].name = " +
+                        ev.dataTransfer.files[i].name
+                    );
+                  }
+                }
+              }
+            </script>
+            <div></div>
+            <div
+              style="
+                border: 5px dashed rgb(172, 172, 187);
+                width: 100%;
+                height: 100px;
+                display: none;
+              "
+              id="drop_zone"
+              ondrop="dropHandler(event);"
+            >
+              <p style="text-align: center">
+                Drag one or more files to this zone
+              </p>
+            </div>
+          </div>
+          <div id="sidebar">
+            <div id="calendar">
+              <div class="calendar-title">
+                <i class="fas fa-calendar-alt"></i><span>Calendar</span>
+              </div>
+              <div class="wrapper">
+                <div id="calendari"></div>
+              </div>
+            </div>
+            <div class="events">
+              <div class="events-title">
+                <i class="fas fa-calendar-check"></i
+                ><span>Upcoming Events</span>
+              </div>
+              <div>
+                <div class="cal" ng-app="calApp" ng-controller="calCtrl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer-wrap">
+          <div class="footer footer-info">
+            <h1><i class="fas fa-school"></i> ABC University</h1>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Address : 2nd floor, Detech
+              II Building, 107 Nguyen Phong Sac, Cau Giay, Hanoi
+            </p>
+            <p>
+              <a href="mailto:thanhbhaf18@gmail.com"
+                ><i class="fas fa-envelope-open-text"></i> Email :
+                thanhbhaf18@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="tel:0366917178"
+                ><i class="fas fa-phone"></i> Hotline : 0123-456-789</a
+              >
+            </p>
+          </div>
+          <div class="footer footer-about">
+            <h1><i class="fas fa-chevron-circle-right"></i> About Us</h1>
+            <div class="right">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+            <div class="left">
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+              <p><i class="fas fa-circle"></i> <a href="">About us 1</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-link">
+          <a href="https://www.facebook.com/fptbtec/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <script src="../../assets/js/drop-user.js"></script>
+    <script src="../../assets/js/fixed-nav-top.js"></script>
+    <script src="../../assets/js/login.js"></script>
+    <script src="../../assets/js/showpass.js"></script>
+    <script src="../../assets/js/sidebar-nav-class.js"></script>
+    <script src="../../assets/js/slideshow.js"></script>
+    <script src="../../assets/js/table.js"></script>
+    <script src="../../assets/js/tablink.js"></script>
+    <script src="../../assets/js/textarea-editor.js"></script>
+    <script src="../../assets/js/responsive.js"></script>
+    </div>
+    <div></div>
+    <!-- Calendar JS -->
+    <script language="javascript" src="../../assets/js/calendar.js"></script>
+    <!-- ShowPass JS -->
+    <script>
+      function showpassFunc() {
+        var x = document.getElementById("codeInput");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+    <!-- Tablink js -->
+    <script>
+      function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab-content");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " first-tab",
+            ""
+          );
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " first-tab";
+      }
+    </script>
+    <!-- Fixed Navigation -->
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("navigation");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <script src="../../assets/js/drop-user.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-signin-client_id"
+      content="262933892162-vhlhfoo5f66lr9ejmtcr1fva804i5cju.apps.googleusercontent.com"
+    />
+    <title>Login with Google Account</title>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="logo">
+      <img class="img-logo" src="assets/images/logo.png" alt="" />
+    </div>
+    <div id="link">
+      <a href="inc/trainee/home.html">trainee</a>
+      <a href="inc/trainer/trainer-index.html">trainer</a>
+      <a href="inc/staff/home.html">staff</a>
+      <a href="inc/admin/manage-major.html">admin</a>
+    </div>
+    <!-- form -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mx-auto">
+          <div id="first">
+            <div class="myform form">
+              <div class="logo mb-3">
+                <div class="col-md-12 text-center">
+                  <h1>Sign in</h1>
+                </div>
+              </div>
+              <form action="trainer-index.html" method="post" name="login">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control"
+                    aria-describedby="emailHelp"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-group"></div>
+                <div class="col-md-12 text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-block mybtn btn-primary tx-tfm"
+                  >
+                    Login
+                  </button>
+                </div>
+                <div class="col-md-12">
+                  <div class="login-or">
+                    <hr class="hr-or" />
+                    <span class="span-or">or</span>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </div>
+                <!-- <div class="form-group">
+                                <p class="text-center">Don't have account? <a href="#" id="signup">Sign up here</a></p>
+                            </div> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+  </body>
+</html>
